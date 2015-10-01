@@ -9,6 +9,7 @@
 <title>UTN FRA</title>
 
 <!-- main css -->
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/media-queries.css" rel="stylesheet" type="text/css">
 <link href="css/ingreso.css" rel="stylesheet">
@@ -37,8 +38,8 @@
 
 		<nav>
 			<ul id="main-nav" class="clearfix">
-				<li><a onclick="" class="btn">Ingreso</a></li>
-				<li><a onclick="" class="btn">Ir a VOTACIÓN</a> </li>
+				<li><a onclick="MostrarFormIngreso()" class="btn">Ingreso</a></li>
+				<li><a onclick="MostrarFormVotacion()" class="btn">Ir a VOTACIÓN</a> </li>
 				<li><a onclick="" class="btn">Listado de Votaciones</a> </li>
 				
 			</ul>

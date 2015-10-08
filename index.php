@@ -1,32 +1,34 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
 
-<!-- disable iPhone inital scale -->
-<meta name="viewport" content=" initial-scale=1.0">
+	<!-- disable iPhone inital scale -->
+	<meta name="viewport" content=" initial-scale=1.0">
 
-<title>UTN FRA</title>
+	<title>UTN FRA</title>
 
-<!-- main css -->
-<link rel="stylesheet" type="text/css" href="css/estilo.css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/media-queries.css" rel="stylesheet" type="text/css">
-<link href="css/ingreso.css" rel="stylesheet">
+	<!-- main css -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+	<link href="css/ingreso.css" rel="stylesheet">
 
-<!-- media queries css -->
- <link rel="stylesheet" href="bower_components/bootstrap-css/css/bootstrap.min.css">
- <script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- media queries css -->
+	<link rel="stylesheet" href="bower_components/bootstrap-css/css/bootstrap.min.css">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 
- <link rel="icon" href="http://www.octavio.com.ar/favicon.ico">
-<script type="text/javascript" src="js/funcionesAjax.js"></script>
-<script type="text/javascript" src="js/funcionesLogin.js"></script>
-<script type="text/javascript" src="js/funcionesABM.js"></script>
-
+	<link rel="icon" href="http://www.octavio.com.ar/favicon.ico">
+	<script type="text/javascript" src="js/funcionesAjax.js"></script>
+	<script type="text/javascript" src="js/funcionesLogin.js"></script>
+	<script type="text/javascript" src="js/funcionesABM.js"></script>
+	<!--GEOLOCALIZACION-->
+	<script type="text/javascript" src='js/funcionesMapa.js'></script>
+	<script type="text/javascript" src='js/geolocalizacionCommon.js'></script>
+	<script type="text/javascript" src='js/moduloGeolocalizacion.js'></script>
 </head>
 
 <body>
-
 <div id="pagewrap">
 
 	<header id="header">
@@ -40,7 +42,9 @@
 			<ul id="main-nav" class="clearfix">
 				<li><a onclick="MostrarFormIngreso()" class="btn">Ingreso</a></li>
 				<li><a onclick="MostrarFormVotacion()" class="btn">Ir a VOTACIÓN</a> </li>
-				<li><a onclick="" class="btn">Listado de Votaciones</a> </li>
+				<li><a onclick="MostrarGrilla()" class="btn">Listado de Votaciones</a> </li>
+				<li><a href='php/logout.php' class="btn">Cerrar Sesion</a> </li>
+
 				
 			</ul>
 			<!-- /#main-nav --> 
@@ -58,15 +62,12 @@
 		<article  class="post clearfix">
 
 			<header  >
-				<h1 class="post-title"><a href="#">AlumnoNombre.Apellido</a></h1>
+				<h1 class="post-title"><a href="#">IvanEzequiel.Chaves</a></h1>
 				<p class="post-meta"><time class="post-date" datetime="2011-05-08" pubdate>2015</time> <em>en</em> <a href="#">UTN FRA</a></p>
 			</header>
 			<hr>
 			<div id="principal">
 
-<?php
-
-?>
 			</div>		
 
 		</article>

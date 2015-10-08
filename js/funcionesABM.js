@@ -3,6 +3,8 @@ function Alta()
 	var provincia = $('#provincia').val();
 	var candidato = $('#candidato').val();
 	var sexo = $('#sexo').val();
+	var localidad = $('#localidad').val();
+	var direccion = $('#direccion').val();
 
 	var funajax = $.ajax({
 	url: 'nexo.php',
@@ -11,11 +13,13 @@ function Alta()
 		queHacer:'Alta',
 		provincia:provincia,
 		candidato:candidato,
-		sexo:sexo
+		sexo:sexo,
+		localidad:localidad,
+		direccion:direccion
 	}
 	});
 	funajax.done(function(retorno)
 	{
-		$('#principal').html('Alta satisfactoria');
+		$('#principal').html(retorno);
 	});
 }

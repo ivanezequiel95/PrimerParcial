@@ -15,6 +15,8 @@ if (isset($_SESSION['dnireg']))
 		<input type='radio' name='sexo' id='sexo' value='Femenino' checked>Masculino
 		<br>
 		<input type='radio' name='sexo' id='sexo' value='Femenino'>Femenino
+		<input type='text' placeholder='Ingrese localidad' id='localidad'>
+		<input type='text' placeholder='Ingrese direccion' id='direccion'>
 		<button onclick='Alta()' class='MiBotonUTN'>Votar :)</button>
 	</form>
 </div>
@@ -23,5 +25,5 @@ if (isset($_SESSION['dnireg']))
 <?php  
 }
 else
-echo "Primero registrate salamin.";
+echo "<center>Primero registrate salamin.</center>";
 ?>

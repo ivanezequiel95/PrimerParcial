@@ -13,9 +13,13 @@ switch ($queHacer)
 		$voto->provincia = $_POST['provincia'];
 		$voto->candidato = $_POST['candidato'];
 		$voto->sexo = $_POST['sexo'];
+		$voto->localidad = $_POST['localidad'];
+		$voto->direccion = $_POST['direccion'];
 		$voto->Alta();
 		break;
-	
+	case 'VerEnMapa':
+		include('partes/FormMapaGoogle.php');
+		break;
 	default:
 		break;
 }

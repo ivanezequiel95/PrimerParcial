@@ -20,3 +20,14 @@ function MostrarFormVotacion()
 	});
 }
 
+function MostrarGrilla()
+{
+	var funajax = $.ajax({
+	url: 'partes/GrillaVotos.php'
+	});
+	funajax.done(function(retorno)
+	{
+		$('#principal').html(retorno);
+	});
+}
+

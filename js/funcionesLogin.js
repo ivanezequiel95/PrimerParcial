@@ -11,6 +11,6 @@ function Login()
 	});
 	funajax.done(function(retorno)
 	{
-		$('#principal').html('Usted esta Logeado :)');
+		$('#principal').html('<center>Usted esta Logeado :)</center>');
 	});
 }
